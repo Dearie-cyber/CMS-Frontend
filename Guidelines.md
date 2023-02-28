@@ -13,7 +13,7 @@ Call-to-action button for visitors to learn more or attend an event.
 ## About Us
 Overview of the church's history, beliefs, and values
 Information about the pastoral staff and leadership team
-Photos of the church building, worship services, and events
+Photos of the church building, worship services, and events.
 
 ## Ministries Sections
 Overview of the different ministries offered by the church
@@ -27,13 +27,13 @@ Details about each event, including date, time, location, and registration infor
 ## Sermons Sections
 Archive of past sermons, organized by date, topic, or series
 Audio or video recordings of each sermon, with the option to download or stream
-Transcripts of each sermon for accessibility
+Transcripts of each sermon for accessibility.
 
 ## Contact Section
 Contact information for the church, including address, phone number, email address, and social media links
-Contact form for visitors to send messages or ask questions
+Contact form for visitors to send messages or ask questions.
 
 ## Footer
 Additional navigation links to important pages or resources
 Copyright information and disclaimer
-Links to the church's social media profiles and newsletter signup
+Links to the church's social media profiles and newsletter signup.
