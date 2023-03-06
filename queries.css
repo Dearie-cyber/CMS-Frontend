@@ -1,0 +1,12 @@
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+@media (max-width: 44em) {
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid--footer {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
