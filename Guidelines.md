@@ -37,3 +37,5 @@ Contact form for visitors to send messages or ask questions.
 Additional navigation links to important pages or resources
 Copyright information and disclaimer
 Links to the church's social media profiles and newsletter signup.
+
+## I will fix the navbar issue
