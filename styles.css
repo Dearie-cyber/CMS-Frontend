@@ -1,4 +1,11 @@
-* {
+:root{
+  --color-primary: #7D0202;
+  --color-text-basic: #767676;
+  --btn-dark: #3f0101;
+}
+
+
+*{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -35,13 +42,96 @@ header {
   margin-bottom: 4.8rem;
 }
 
-nav {
-  font-size: 20px;
-  font-weight: 700;
+.navigate{
   display: flex;
   justify-content: space-between;
-  padding-top: 32px;
+  align-items: center;
+  height: 9.6rem;
+  padding: 0 4.8rem;
+  position: relative;
 }
+
+.logo {
+  height: 2.2rem;
+} 
+
+/**************************/
+/* NAVIGATION */
+/**************************/
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 4.8rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+} 
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: var(--btn-dark);
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: #fff;
+  background-color: var(--color-primary);
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: var(--btn-dark);
+}
+
+/* MOBILE */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+/* STICKY NAVIGATION */
+.sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: rgba(255, 255, 255, 0.97);
+  z-index: 999;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+
+.sticky .section-hero {
+  margin-top: 9.6rem;
+}
+
+
+
 
 .header-container {
   width: 1200px;
@@ -122,7 +212,7 @@ h2 {
 
 .footer {
   padding: 12.8rem 0;
-  border-top: 1px solid #eee;
+  border-top: 1px solid #7D0202;
 }
 
 .grid--footer {
@@ -153,7 +243,7 @@ h2 {
 .copyright {
   font-size: 1.4rem;
   line-height: 1.6;
-  color: #767676;
+  color: var(--color-text-basic);
   margin-top: auto;
 }
 
@@ -184,7 +274,7 @@ h2 {
 .footer-link:visited {
   text-decoration: none;
   font-size: 1.6rem;
-  color: #767676;
+  color: var(--color-text-basic);
   transition: all 0.3s;
 }
 
@@ -192,3 +282,4 @@ h2 {
 .footer-link:active {
   color: #555;
 }
+
