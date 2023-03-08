@@ -296,14 +296,10 @@ h2 {
 }
 
 .cta-img-box {
-  background-image: linear-gradient(
-      to right bottom,
-      var(--linear-cta),
-      var(--linear-dark)
-    ),
-    url("/images/peter.jpg");
+  background-image: url("/images/peter.jpg");
   background-size: cover;
   background-position: center;
+  opacity: 0.7;
 }
 
 .cta-form {
@@ -334,7 +330,7 @@ h2 {
 }
 
 .cta-form input::placeholder {
-  color: #aaa;
+  color: #333;
 }
 
 .cta *:focus {
@@ -344,7 +340,7 @@ h2 {
 
 .btn--form {
   background-color: #45260a;
-  color: #fdf2e9;
+  color: #3333337a;
   align-self: end;
   padding: 1.2rem;
   outline: none;
@@ -433,3 +429,42 @@ h2 {
 }
 
 /* This is the media query to make it responsive */
+@media (max-width: 768px) {
+  .header-container-inner h1 {
+    font-size: 36px;
+    margin-bottom: 16px;
+    line-height: 1.2;
+  }
+
+  .header-container-inner p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+
+  .btn:link,
+  .btn:visited {
+    font-size: 13px;
+    font-weight: 600;
+    background-color: var(--color-primary);
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 9px;
+  }
+
+  .footer {
+    padding: 30px;
+  }
+
+  .grid {
+    display: grid;
+    column-gap: 1.4rem;
+    row-gap: 5rem;
+  }
+
+  .grid--footer {
+    grid-template-columns: 1fr;
+  }
+}
