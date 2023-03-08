@@ -132,26 +132,33 @@ header {
 
 
 
+/* Using Positioning will make it more difficult while trying to make it responsive so I'm with margin */
 
-.header-container {
+
+/* .header-container {
   width: 1200px;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+} */
+
+.header-container {
+  margin-left: 10%;
 }
 
 .header-container-inner {
   width: 50%;
 }
 
-h1 {
+
+.header-container-inner h1 {
   font-size: 52px;
   margin-bottom: 32px;
   line-height: 1.05;
 }
 
-p {
+.header-container-inner p {
   font-size: 20px;
   line-height: 1.6;
   margin-bottom: 48px;
@@ -216,7 +223,7 @@ h2 {
 }
 
 .grid--footer {
-  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .logo-col {
@@ -250,7 +257,7 @@ h2 {
 .footer-heading {
   font-size: 1.8rem;
   font-weight: 500;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .contacts {
@@ -283,3 +290,43 @@ h2 {
   color: #555;
 }
 
+/* This is the media query to make it responsive */
+@media (max-width: 768px) {
+  .header-container-inner h1 {
+    font-size: 36px;
+    margin-bottom: 16px;
+    line-height: 1.2;
+  }
+
+  .header-container-inner p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+
+  .btn:link,
+  .btn:visited {
+    font-size: 13px;
+    font-weight: 600;
+    background-color: var(--color-primary);
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 9px;
+  }
+
+  .footer {
+    padding: 30px;
+  }
+
+  .grid {
+    display: grid;
+    column-gap: 1.4rem;
+    row-gap: 5rem;
+  }
+
+  .grid--footer {
+    grid-template-columns: 1fr;
+  }
+}
