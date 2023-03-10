@@ -428,6 +428,8 @@ h2 {
   color: #555;
 }
 
+
+
 /* This is the media query to make it responsive */
 @media (max-width: 768px) {
   .header-container-inner h1 {
