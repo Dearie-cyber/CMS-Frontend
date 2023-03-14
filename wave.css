@@ -86,17 +86,9 @@
     }
 }
 
-/* Carousel */
-/* <div class="pic-ctn">
-    <img src="https://picsum.photos/200/300?t=1" alt="" class="pic">
-    <img src="https://picsum.photos/200/300?t=2" alt="" class="pic">
-    <img src="https://picsum.photos/200/300?t=3" alt="" class="pic">
-    <img src="https://picsum.photos/200/300?t=4" alt="" class="pic">
-    <img src="https://picsum.photos/200/300?t=5" alt="" class="pic">
-  </div> */
 
   /* Css */
-  /* .pic-ctn {
+  .pic-ctn {
   width: 100vw;
   height: 200px;
 }
@@ -126,9 +118,9 @@
 
 .pic-ctn {
   position: relative;
-  width: 100vw;
+  display: block;
+  width: 100%;
   height: 300px;
-  margin-top: 15vh;
 }
 
 .pic-ctn > img {
@@ -137,17 +129,19 @@
   left: calc(50% - 100px);
   opacity: 0;
   animation: display 10s infinite;
+  width: auto;
+  height: 100%;
 }
 
-img:nth-child(2) {
+.pic:nth-child(2) {
   animation-delay: 2s;
 }
-img:nth-child(3) {
+.pic:nth-child(3) {
   animation-delay: 4s;
 }
-img:nth-child(4) {
+.pic:nth-child(4) {
   animation-delay: 6s;
 }
-img:nth-child(5) {
+.pic:nth-child(5) {
   animation-delay: 8s;
-} */
+}
